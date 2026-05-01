@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wumpus Logic Agent</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>⟨ WUMPUS LOGIC AGENT ⟩</h1>
+</header>
+
+<div class="app">
+
+  <!-- LEFT -->
+  <div class="panel">
+    <h3>Controls</h3>
+
+    <label>Grid</label>
+    <input type="number" id="rows" value="4" min="3" max="8">
+    <input type="number" id="cols" value="4" min="3" max="8">
+
+    <label>Pit %</label>
+    <input type="range" id="pit-prob" min="10" max="40" value="20">
+    <div id="pit-prob-val">20%</div>
+
+    <button id="btn-new">New Episode</button>
+    <button id="btn-step" disabled>Step Agent</button>
+
+  </div>
+
+  <!-- CENTER -->
+  <div class="center">
+    <div id="status-bar">Initialize episode</div>
+    <div id="grid-container"></div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="panel">
+    <h3>Metrics</h3>
+    <div>Steps: <span id="m-steps">0</span></div>
+    <div>Visited: <span id="m-visited">0</span></div>
+
+    <h3>Log</h3>
+    <div id="log"></div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

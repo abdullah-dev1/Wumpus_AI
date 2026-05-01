@@ -1,0 +1,51 @@
+body{
+  margin:0;
+  font-family: monospace;
+  background:#050a0e;
+  color:#c8e8f0;
+}
+
+header{
+  text-align:center;
+  padding:15px;
+  border-bottom:1px solid #0d3d5c;
+}
+
+.app{
+  display:grid;
+  grid-template-columns:250px 1fr 250px;
+  gap:10px;
+  padding:10px;
+}
+
+.panel{
+  background:#0a1520;
+  padding:10px;
+  border:1px solid #0d3d5c;
+}
+
+.center{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+#grid-container{
+  display:grid;
+  gap:4px;
+  margin-top:10px;
+}
+
+.cell{
+  width:65px;
+  height:65px;
+  border:1px solid #1f3a4a;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+
+/* states */
+.agent{ background:rgba(0,212,255,0.3); }
+.pit{ background:rgba(255,102,0,0.25); }
